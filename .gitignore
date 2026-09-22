@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local configuration
+.venv/
+.venv*/
+.env
+.DS_Store
+/.codex/
+/.agents/
+/AGENTS.md
+
+# Solver and temporary files
+*.log
+*.lp
+*.mps
+*.sol
+/experimental_code_and_results.zip
+
+# Intermediate experiment runs. The two curated result folders below are kept.
+/experiments/output/
+/experiments/output_final/
+/experiments/output_revised_full/
+/experiments/output_v2/
+/experiments/smoke/
+/experiments/temporal_seed_*/
+/experiments/temporal_smoke*/
+/experiments/curriculum_*/
+
+!/experiments/output_10s/
+/experiments/output_10s/*
+!/experiments/output_10s/README.md
+!/experiments/output_10s/policy_metrics.csv
+!/experiments/output_10s/pwa_metrics.csv
+!/experiments/output_10s/summary.json
+!/experiments/output_10s/operational_performance.png
+!/experiments/output_temporal_final/
+!/experiments/output_temporal_final/**

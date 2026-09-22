@@ -1,0 +1,53 @@
+{
+  "seeds": [
+    20260920,
+    20260921,
+    20260922
+  ],
+  "mean_metrics": {
+    "current_mlp": {
+      "nrmse_q": 0.2993,
+      "material_violation_pct": 0.0588,
+      "capacity_violation_pct": 0.0,
+      "ood_physical_violation_pct": 27.8954,
+      "monotonicity_violation_pct": 5.3661,
+      "optimistic_error_p95": 0.4718,
+      "rollout_wip_nrmse": 0.3027,
+      "seed": 20260921.0
+    },
+    "data_tcn": {
+      "nrmse_q": 0.2248,
+      "material_violation_pct": 0.2058,
+      "capacity_violation_pct": 0.0,
+      "ood_physical_violation_pct": 36.4198,
+      "monotonicity_violation_pct": 6.4113,
+      "optimistic_error_p95": 0.4466,
+      "rollout_wip_nrmse": 0.221,
+      "seed": 20260921.0
+    },
+    "pi_tcn": {
+      "nrmse_q": 0.2197,
+      "material_violation_pct": 0.147,
+      "capacity_violation_pct": 0.0,
+      "ood_physical_violation_pct": 6.4668,
+      "monotonicity_violation_pct": 2.7304,
+      "optimistic_error_p95": 0.3927,
+      "rollout_wip_nrmse": 0.2173,
+      "seed": 20260921.0
+    },
+    "window_mlp": {
+      "nrmse_q": 0.3376,
+      "material_violation_pct": 0.2352,
+      "capacity_violation_pct": 0.2058,
+      "ood_physical_violation_pct": 69.4004,
+      "monotonicity_violation_pct": 5.4314,
+      "optimistic_error_p95": 0.7081,
+      "rollout_wip_nrmse": 0.3232,
+      "seed": 20260921.0
+    }
+  },
+  "tcn_vs_current_rollout_reduction_pct": 27.0,
+  "tcn_vs_window_rollout_reduction_pct": 31.64,
+  "pi_vs_data_ood_violation_reduction_pct": 82.24,
+  "pi_vs_data_monotonicity_reduction_pct": 57.41
+}

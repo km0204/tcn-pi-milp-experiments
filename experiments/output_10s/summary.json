@@ -1,0 +1,136 @@
+{
+  "synthetic_pilot": true,
+  "config": {
+    "output": "experiments/output_10s",
+    "train_trajectories": 30,
+    "val_trajectories": 12,
+    "test_trajectories": 18,
+    "trajectory_length": 32,
+    "epochs": 28,
+    "closed_loop_reps": 5,
+    "closed_loop_length": 15,
+    "horizon": 3,
+    "solver_time_limit": 10.0,
+    "seed": 20260920,
+    "skip_closed_loop": false
+  },
+  "surrogate_mean": {
+    "current_mlp": {
+      "nrmse_q": 0.3086,
+      "material_violation_pct": 0.0,
+      "capacity_violation_pct": 0.0,
+      "ood_physical_violation_pct": 36.5961,
+      "monotonicity_violation_pct": 5.3498,
+      "optimistic_error_p95": 0.4631,
+      "rollout_wip_nrmse": 0.3111
+    },
+    "data_tcn": {
+      "nrmse_q": 0.2232,
+      "material_violation_pct": 0.1764,
+      "capacity_violation_pct": 0.0,
+      "ood_physical_violation_pct": 26.8959,
+      "monotonicity_violation_pct": 5.8103,
+      "optimistic_error_p95": 0.4317,
+      "rollout_wip_nrmse": 0.217
+    },
+    "pi_tcn": {
+      "nrmse_q": 0.2229,
+      "material_violation_pct": 0.0,
+      "capacity_violation_pct": 0.0,
+      "ood_physical_violation_pct": 4.2328,
+      "monotonicity_violation_pct": 2.3124,
+      "optimistic_error_p95": 0.3926,
+      "rollout_wip_nrmse": 0.2161
+    },
+    "window_mlp": {
+      "nrmse_q": 0.3469,
+      "material_violation_pct": 0.0882,
+      "capacity_violation_pct": 0.0882,
+      "ood_physical_violation_pct": 68.3422,
+      "monotonicity_violation_pct": 4.7717,
+      "optimistic_error_p95": 0.6759,
+      "rollout_wip_nrmse": 0.3298
+    }
+  },
+  "pwa_mean": {
+    "pwa_vs_tcn_nrmse": 0.3464,
+    "pwa_vs_des_nrmse": 0.3819,
+    "material_violation_pct": 0.0,
+    "capacity_violation_pct": 0.0,
+    "optimistic_error_p95": 0.1072
+  },
+  "policy_mean": {
+    "deterministic_rh": {
+      "stress": 0.5,
+      "seed": 20561422.0,
+      "inventory_cost": 9.1026,
+      "backlog_cost": 8232.4066,
+      "wip_cost": 152.0212,
+      "cleaning_cost": 6.4626,
+      "total_cost": 8399.9929,
+      "fill_rate": 0.329,
+      "mean_backlog": 45.7356,
+      "mean_wip": 28.9564,
+      "cleaning_time": 10.7709,
+      "action_reject_rate": 0.0378,
+      "target_shortfall_ratio": 0.0595,
+      "solve_time_median": 2.9658,
+      "solve_time_p95": 6.6785,
+      "timeout_count": 0.0
+    },
+    "heuristic": {
+      "stress": 0.5,
+      "seed": 20561422.0,
+      "inventory_cost": 2.4653,
+      "backlog_cost": 9450.1084,
+      "wip_cost": 608.2159,
+      "cleaning_cost": 14.3297,
+      "total_cost": 10075.1192,
+      "fill_rate": 0.2728,
+      "mean_backlog": 52.5006,
+      "mean_wip": 115.8506,
+      "cleaning_time": 23.8828,
+      "action_reject_rate": 0.0,
+      "target_shortfall_ratio": NaN,
+      "solve_time_median": 0.0,
+      "solve_time_p95": 0.0,
+      "timeout_count": 0.0
+    },
+    "scenario_block": {
+      "stress": 0.5,
+      "seed": 20561422.0,
+      "inventory_cost": 11.6343,
+      "backlog_cost": 8189.0353,
+      "wip_cost": 158.2382,
+      "cleaning_cost": 4.6227,
+      "total_cost": 8363.5305,
+      "fill_rate": 0.3464,
+      "mean_backlog": 45.4946,
+      "mean_wip": 30.1406,
+      "cleaning_time": 7.7045,
+      "action_reject_rate": 0.0467,
+      "target_shortfall_ratio": 0.0844,
+      "solve_time_median": 6.4382,
+      "solve_time_p95": 9.4032,
+      "timeout_count": 0.1
+    },
+    "scenario_rh": {
+      "stress": 0.5,
+      "seed": 20561422.0,
+      "inventory_cost": 9.0176,
+      "backlog_cost": 8152.2451,
+      "wip_cost": 153.2229,
+      "cleaning_cost": 4.3297,
+      "total_cost": 8318.8153,
+      "fill_rate": 0.3584,
+      "mean_backlog": 45.2903,
+      "mean_wip": 29.1853,
+      "cleaning_time": 7.2161,
+      "action_reject_rate": 0.0156,
+      "target_shortfall_ratio": 0.0349,
+      "solve_time_median": 6.6721,
+      "solve_time_p95": 9.4896,
+      "timeout_count": 0.0
+    }
+  }
+}
